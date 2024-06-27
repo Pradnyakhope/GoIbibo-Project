@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Deals</title>
+    <link rel="stylesheet" href="style1.css">
+    <script>
+        document.querySelector('.prev').addEventListener('click', () => {
+            document.querySelector('.offers-cards').scrollBy({
+                left: -300,
+                behavior: 'smooth'
+            });
+        });
+    
+        document.querySelector('.next').addEventListener('click', () => {
+            document.querySelector('.offers-cards').scrollBy({
+                left: 300,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="hotel-deals-container">
+        <div class="container3">
+            <h2>Daily Steal Deals</h2>
+            <div class="slider">
+                <button class="prev">&#10094;</button>
+                <div class="offers-cards">
+                    <div class="offer-card">
+                        <img src="https://gos3.ibcdn.com/nond_v2_new-1635506214.png" alt="Daily Steal">
+                        <div class="offer-details">
+                            <h3>Daily Steal Deals</h3>
+                            <p>Ends in 7h: 14m: 9s</p>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <img src="./assets/umbrella-hammocks-pool.jpg" alt="Hotel Asian Inn">
+                        <div class="offer-details">
+                            <h3>Hotel Asian Inn</h3>
+                            <p>Nagpur</p>
+                        <div class="ratings">
+                            <span>3.8/5</span>
+                            <p>1679 Ratings</p>
+                        </div>
+                        <p>&#8377; 2500 <span>per night</span></p>
+                    </div>
+                    </div>
+                    <div class="offer-card">
+                        <img src="./assets/Hotel2.jpg" alt="Hotel Girija Inn">
+                        <div class="offer-details">
+                            <h3>Hotel Girija Inn</h3>
+                            <p>Nagpur</p>
+                        <div class="ratings">
+                                <span>4.1/5</span>
+                                <p>7 Ratings</p>
+                        </div>
+                            <p>&#8377; 2049 <span>per night</span></p>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <img src="./assets/Hotel3.jpg" alt="Hotel Kamal">
+                        <div class="offer-details">
+                            <h3>Hotel Kamal</h3>
+                            <p>Nagpur</p>
+                        <div class="ratings">
+                            <span>3.2/5</span>
+                            <p>718 Ratings</p>
+                        </div>
+                        <p>&#8377; 1550 <span>per night</span></p>
+                    </div>
+                    </div>
+                    <div class="offer-card">
+                        <img src="./assets/Hotel4.jpg" alt="Hotel Kamal">
+                        <div class="offer-details">
+                            <h3>Hotel Kamal</h3>
+                            <p>Nagpur</p>
+                        <div class="ratings">
+                            <span>3.2/5</span>
+                            <p>718 Ratings</p>
+                        </div>
+                        <p>&#8377; 1550 <span>per night</span></p>
+                    </div>
+                    </div>
+                    <div class="offer-card">
+                        <img src="./assets/Hotel5.jpg" alt="Hotel Kamal">
+                        <div class="offer-details">
+                            <h3>Hotel Kamal</h3>
+                            <p>Nagpur</p>
+                        <div class="ratings">
+                            <span>3.2/5</span>
+                            <p>718 Ratings</p>
+                        </div>
+                        <p>&#8377; 1550 <span>per night</span></p>
+                    </div>
+                    </div>
+                    <div class="offer-card">
+                        <img src="./assets/Hotel6.jpg" alt="Hotel Kamal">
+                        <div class="offer-details">
+                            <h3>Hotel Kamal</h3>
+                            <p>Nagpur</p>
+                            <div class="ratings">
+                                <span>3.2/5</span>
+                                <p>718 Ratings</p>
+                            </div>
+                            <p>&#8377; 1550 <span>per night</span></p>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <img src="./assets/Hotel7.jpg" alt="Hotel Kamal">
+                        <div class="offer-details">
+                            <h3>Hotel Kamal</h3>
+                            <p>Nagpur</p>
+                            <div class="ratings">
+                                <span>3.2/5</span>
+                                <p>718 Ratings</p>
+                            </div>
+                            <p>&#8377; 1550 <span>per night</span></p>
+                        </div>
+                    </div>
+                </div>
+            <button class="next">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <!-- Vacation container starts from here -->
+    <div class="vacation-container">
+        <div class="container4">
+        <div class="tabs">
+            <button class="tab active">Beach Vacations</button>
+            <button class="tab">Weekend Getaways</button>
+            <button class="tab">Mountains Calling</button>
+            <button class="tab">Stay Like Royals</button>
+            <button class="tab">Indian Pilgrimages</button>
+            <button class="tab">Party Destinations</button>
+        </div>
+        <div class="slider">
+            <button class="prev">&#10094;</button>
+            <div class="offers-cards">
+                <div class="offer-card">
+                    <img src="./assets/maldives.jpg" alt="Maldives">
+                    <div class="offer-details">
+                        <p>Maldives</p>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="./assets/krabi.jpg" alt="Krabi">
+                    <div class="offer-details">
+                        <p>Krabi</p>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="./assets/phuket.jpg" alt="Phuket">
+                    <div class="offer-details">
+                        <p>Phuket</p>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="./assets/langkawi.jpg" alt="Langkawi">
+                    <div class="offer-details">
+                        <p>Langkawi</p>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="./assets/phuket.jpg" alt="Phuket">
+                    <div class="offer-details">
+                        <p>Phuket</p>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="./assets/krabi.jpg" alt="Krabi">
+                    <div class="offer-details">
+                        <p>Krabi</p>
+                    </div>
+                </div>
+            </div>
+            <button class="next">&#10095;</button>
+        </div>
+        </div>
+    </div>
+    <div class="sponsored-ad">
+        <div class="ad-content">
+          <div class="ad-logo">
+            <img src="./assets/Dubai-img.png" alt="Dubai Logo">
+          </div>
+        </div>  
+    </div>
+</div>
+</body>
+</html>

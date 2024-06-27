@@ -1,0 +1,271 @@
+/* Hotel page css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:aliceblue;
+    width:100vw;
+    height:100vh;
+}
+
+.container3{
+    margin:10px;
+    padding: 5px;
+}
+
+.hotel-deals-container {
+    padding: 20px;
+    width: 90%;
+    height:75%;
+    background-color: #fff;
+    margin:30px;
+    border-radius:5px;
+}
+
+.hotel-deals-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.slider {
+    position: relative;
+}
+
+.offers-cards {
+    display: flex;
+    gap: 20px;
+    /* height:30%; */
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    /* width:100%; */
+}
+
+.offers-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.offer-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: scale(1.05);
+}
+
+.offer-card img {
+    width: 90%;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+}
+
+.offer-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.offer-details h3 {
+    margin: 10px 0;
+    color: #FF6600;
+    font-size: 18px;
+}
+
+.offer-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.offer-details .ratings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.offer-details .ratings span {
+    background-color: #FF6600;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.slider .prev {
+    left: 10px;
+}
+
+.slider .next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .offer-card {
+        width: 80%;
+    }
+}
+
+/* Vacation css */
+
+.vacation-container {
+    padding: 20px;
+    background-color:#fff;
+    margin: 30px;
+    width:90%;
+}
+
+/* .container4{
+    background-color:beige;
+    border:1px solid black;
+
+} */
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    border-bottom:0.5px solid rgb(219, 191, 245);
+}
+
+.tabs .tab {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+    position: relative;
+
+}
+.tabs::-webkit-scrollbar{
+    display: none;
+}
+
+.tabs .tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: #007bff;
+}
+
+.slider {
+    position: relative;
+}
+
+.offers-cards {
+    display: flex;
+    gap: 50px;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+.offers-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.offer-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.offer-card:hover {
+    transform: scale(1.05);
+}
+
+.offer-card img {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.offer-details {
+    padding: 10px;
+    text-align: center;
+}
+
+.offer-details p {
+    margin: 5px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.slider .prev {
+    left: 10px;
+}
+
+.slider .next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .offer-card {
+        width: 80%;
+    }
+}
+
+/* sponsered add css */
+
+.sponsored-ad img {
+    height: 100px;
+    border-radius: 10px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+    width:70%;
+}

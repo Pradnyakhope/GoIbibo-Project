@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+   
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -78,17 +79,18 @@ body {
 
 .offers-cards {
     display: flex;
-    /* flex-wrap: wrap; */
-    gap: 20px;
+    /* flex-wrap: wrap;
+    gap: 20px; */
     justify-content: space-around;
     overflow-x: scroll;
     /* -webkit-overflow-scrolling: touch; */
 }
+
 .offers-cards::-webkit-scrollbar{
     display: none;
 }
 
-.offer-card {
+ .offer-card {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -277,3 +279,5 @@ body {
         transform: translateY(0);
     }
 }
+
+
