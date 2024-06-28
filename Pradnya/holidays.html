@@ -1,0 +1,139 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hotel Deals</title>
+        <link rel="stylesheet" href="style5.css">
+        <script>
+            document.querySelector('.prev').addEventListener('click', () => {
+                document.querySelector('.offers-cards').scrollBy({
+                    left: -300,
+                    behavior: 'smooth'
+                });
+            });
+        
+            document.querySelector('.next').addEventListener('click', () => {
+                document.querySelector('.offers-cards').scrollBy({
+                    left: 300,
+                    behavior: 'smooth'
+                });
+            });
+        </script>
+    </head>
+    <body>
+    <div class="holiday-container">
+        <div class="container4">
+            <h1 >Holiday Packages Now On Sale</h1>
+            <p>Get Flat 45% Off! Use code: GOHOLIDAY</p>
+        <div class="slider">
+            <button class="prev">&#10094;</button>
+            <div class="offers-cards">
+                <div class="card" style="background: url(./assets/Kerala.jpg);">
+                    <div class="div1">
+                        <h4>Kerala</h4>
+                        <p>Starting at rs 41,200 per person</p>
+                    </div>
+                </div>
+                <div class="card" style="background: url(./assets/Goa.jpg);">
+                    <!-- <img src="./assets/Goa.jpg" alt="Goa"> -->
+                    <div class="div1">
+                        <h4>Goa</h4>
+                        <p>Starting at rs 8,200 per person</p>
+                    </div>
+                </div>
+                <div class="card" style="background: url(./assets/Andaman.jpg);">
+                    <!-- <img src="./assets/Goa.jpg" alt="Goa"> -->
+                    <div class="div1">
+                        <h4>Andaman</h4>
+                        <p>Starting at rs 10,200 per person</p>
+                    </div>
+                </div>
+                <div class="card" style="background: url(./assets/Kashmir.jpg);">
+                    <!-- <img src="./assets/Goa.jpg" alt="Goa"> -->
+                    <div class="div1">
+                        <h4>Kashmir</h4>
+                        <p>Starting at rs 40,200 per person</p>
+                    </div>
+                </div>
+                <div class="card" style="background: url(./assets/Rajasthan.jpg);">
+                    <!-- <img src="./assets/Goa.jpg" alt="Goa"> -->
+                    <div class="div1">
+                        <h4>Rajasthan</h4>
+                        <p>Starting at rs 10,200 per person</p>
+                    </div>
+                </div>
+                <div class="card" style="background: url(./assets/Himachal.jpg);">
+                    <!-- <img src="./assets/Goa.jpg" alt="Goa"> -->
+                    <div class="div1">
+                        <h4>Himachal</h4>
+                        <p>Starting at rs 10,200 per person</p>
+                    </div>
+                </div>
+                <div class="card" style="background: url(./assets/Ladakh.jpg);">
+                    <!-- <img src="./assets/Goa.jpg" alt="Goa"> -->
+                    <div class="div1">
+                        <h4>Ladakh</h4>
+                        <p>Starting at rs 10,200 per person</p>
+                    </div>
+                </div>
+                <div class="card" style="background: url(./assets/North-east.jpg);">
+                    <!-- <img src="./assets/Goa.jpg" alt="Goa"> -->
+                    <div class="div1">
+                        <h4>North-east</h4>
+                        <p>Starting at rs 10,200 per person</p>
+                    </div>
+                </div>
+            </div>
+            <button class="next">&#10095;</button>
+        </div>
+        </div>
+    </div>
+    <!-- Top International Destinations -->
+    <div class="container">
+        <h1>Top International Destinations</h1>
+        <p>Book now to grab best offers!</p>
+        <div class="slider">
+            <button class="prev">&#10094;</button>
+        <div class="destinations">
+            <div class="destination">
+                <img src="./assets/thiland.jpg" alt="Thailand">
+                <h2>Thailand</h2>
+                <p>Starting at ₹72,500 Per person</p>
+            </div>
+            <div class="destination">
+                <img src="./assets/maldive.jpg" alt="Maldives">
+                <h2>Maldives</h2>
+                <p>Starting at ₹64,400 Per person</p>
+            </div>
+            <div class="destination">
+                <img src="./assets/Bali-Hotes.jpg" alt="Bali">
+                <h2>Bali</h2>
+                <p>Starting at ₹72,300 Per person</p>
+            </div>
+            <div class="destination">
+                <img src="./assets/singapore.jpg" alt="Singapore">
+                <h2>Singapore</h2>
+                <p>Starting at ₹72,300 Per person</p>
+            </div>
+            <div class="destination">
+                <img src="./assets/dubai-img.jpg" alt="Dubai">
+                <h2>Dubai</h2>
+                <p>Starting at ₹90,000 Per person</p>
+            </div>
+            <div class="destination">
+                <img src="./assets/vietnam.jpg" alt="Vietnam">
+                <h2>Vietnam</h2>
+                <p>Starting at ₹18,400 Per person</p>
+            </div>
+            <div class="destination">
+                <img src="./assets/shrilanka.jpg" alt="Srilanka">
+                <h2>Srilanka</h2>
+                <p>Starting at ₹56,300 Per person</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

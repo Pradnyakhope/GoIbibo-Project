@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.benefits-container {
+    padding: 40px 20px;
+    background-color: #e9f1fc;
+}
+
+.benefits-container h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.benefits-container p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.benefit {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.benefit:hover {
+    transform: scale(1.05);
+}
+
+.benefit img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.benefit h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.benefit a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.benefit a:hover {
+    text-decoration: underline;
+}
+
+/* Offers section starts */
+
+.vacation-container {
+    padding: 20px;
+    background-color:#fff;
+    margin: 80px;
+    width:80%;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    border-bottom:0.5px solid rgb(219, 191, 245);
+}
+.tabs .offer{
+    text-decoration:underline;
+    text-decoration-color: #007bff;
+    
+}
+
+.tabs .tab {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+    position: relative;
+
+}
+.tabs::-webkit-scrollbar{
+    display: none;
+}
+
+.tabs .tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: #007bff;
+}
+
+.slider {
+    position: relative;
+}
+
+.offers-cards {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 50px;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+.offers-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.offer-card {
+    /* display: flex; */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.offer-card:hover {
+    transform: scale(1.05);
+}
+
+.offer-card img {
+    
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.offer-details {
+    padding: 10px;
+    text-align: center;
+}
+
+.offer-details .bold-text{
+    font-weight: bold;
+}
+
+.offer-details p {
+    margin: 2px 0;
+    color: #333;
+    font-weight: lighter;
+    font-size: small;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.slider .prev {
+    left: 10px;
+}
+
+.slider .next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .offer-card {
+        width: 80%;
+    }
+}
+
+
+/* Railway inquiry css */
+
+.inquiry-container {
+    padding: 30px 20px;
+    background-color: #e9f1fc;
+    text-align: center;
+    
+}
+.container5{
+    background-color: #b5d1f0;
+    padding-bottom: 40px;
+}
+.container5 .railway{
+    background-color: #b5d1f0;
+    padding:20px;
+    margin-top: 10px;
+}
+
+.inquiry-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.inquiry-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.inquiry-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 250px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.inquiry-card:hover {
+    transform: scale(1.05);
+}
+
+.inquiry-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.inquiry-card p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.inquiry-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.inquiry-card a .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.inquiry-card a:hover .arrow {
+    transform: translateX(5px);
+}
+
+/* Book Meals for train css */
+
+.meal-container{
+    width:80%;
+    padding: 30px 20px;
+    margin: 60px;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+
+.bookmeal-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bookmeal-grid img{
+    width: 10%;   
+}
+
+.bookmeal-card .head{
+    font-weight:bolder;
+    padding: 10px;
+    margin: 10px;
+}
+
+.bookmeal-card .para{
+    font-weight: bolder;
+}
+
+.container6 .btn1{
+    display: inline-block;
+    border:1px solid rgb(117, 110, 108);
+    border-radius: 10px;
+    padding: 15px;
+    background-color:rgb(245, 93, 37);
+    color: white;
+    text-decoration: none;
+}
+
+
+/* IRCTC Settings css */
+
+.irctc-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:80vw;
+    height: 30vh;
+    margin: 50px;
+    background-color:white;
+    border-radius: 10px;
+  }
+  .irctc-container .irctc-heading {
+
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+    .fa-arrow-right {
+    background-color:rgb(86, 86, 229);
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+  }
+
+  /* Goibibo ticket css */
+  .ticket-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+    color: #000;
+    text-align: center;
+}
+
+.features-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.features-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 1em;
+    color: #333;
+}
+.features-table .bold {
+    font-weight: bold;
+}
+.features-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* sponsered Advertise css */
+
+.sponsored-ad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #fff; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    padding: 20px;
+    border-radius: 15px;
+    margin: 30px 110px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.sponsored-ad img {
+    height: 100px;
+    border-radius: 10px;
+}
